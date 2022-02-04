@@ -16,7 +16,7 @@ Please refer to our [official pbbioconda page](https://github.com/PacificBioscie
 for information on Installation, Support, License, Copyright, and Disclaimer.
 
 ## Latest Version
-Version **1.0.0**: [Full changelog here](#changelog)
+Version **1.1.0**: [Full changelog here](#changelog)
 
 ## Input Data
 Input for *primrose* are PacBio HiFi reads with kinetics. You can generate HiFi
@@ -69,5 +69,9 @@ True positives - HG002 WGA + CpG Methyltransferase (M.Sssl).
 
 ## Changelog
 
-**1.0.0**
-  * Initial release for upcoming SMRT Link release
+ * **1.1.0**
+   * Add CLI call into new `@PG` header lines
+   * Allow multiple `BAM` files via `XML` input
+
+ * 1.0.0
+   * Initial release
