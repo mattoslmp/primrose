@@ -16,7 +16,7 @@ Please refer to our [official pbbioconda page](https://github.com/PacificBioscie
 for information on Installation, Support, License, Copyright, and Disclaimer.
 
 ## Latest Version
-Version **1.1.0**: [Full changelog here](#changelog)
+Version **1.3.0**: [Full changelog here](#changelog)
 
 ## Input Data
 Input for *primrose* are PacBio HiFi reads with kinetics. You can generate HiFi
@@ -38,10 +38,10 @@ using `Mm` and `Ml` tags. It's also described in the [PacBio BAM file formats](h
 
 | Tag  | Type  |           Description            |
 | ---- | ----- | -------------------------------- |
-| `Mm` | `Z`   | Base modifications / methylation |
-| `Ml` | `B,C` | Base modification probabilities  |
+| `MM` | `Z`   | Base modifications / methylation |
+| `ML` | `B,C` | Base modification probabilities  |
 
-Notes for `Ml`: The continuous probability range of 0.0 to 1.0 is remapped to
+Notes for `ML`: The continuous probability range of 0.0 to 1.0 is remapped to
 the discrete integers 0 to 255 inclusively. The probability range corresponding
 to an integer N is `N/256` to `(N + 1)/256`.
 
@@ -69,7 +69,14 @@ True positives - HG002 WGA + CpG Methyltransferase (M.Sssl).
 
 ## Changelog
 
- * **1.1.0**
+ * **1.3.0**
+   * Latest developer version
+
+ * 1.2.0
+   * Included in upcoming SMRT Link version
+   * Use official basemod tags `MM` and `ML` per SAM spec Feb 2022
+
+ * 1.1.0
    * Add CLI call into new `@PG` header lines
    * Allow multiple `BAM` files via `XML` input
 
