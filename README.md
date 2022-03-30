@@ -62,7 +62,7 @@ to an integer N is `N/256` to `(N + 1)/256`.
 True negatives - HG002 Whole Genome Amplification (WGA).\
 True positives - HG002 WGA + CpG Methyltransferase (M.Sssl).
 
-### Metrics
+### Metrics per HiFi read (1x)
  * **Precision**: 86%
  * **Recall**: 85%
  * **Accuracy**: 85%
