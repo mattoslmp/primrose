@@ -57,15 +57,11 @@ to an integer N is `N/256` to `(N + 1)/256`.
     CPU Time   : 16m 52s
     Peak RSS   : 0.313 GB
 
-## Single-molecule performance
-### Data
-True negatives - HG002 Whole Genome Amplification (WGA).\
-True positives - HG002 WGA + CpG Methyltransferase (M.Sssl).
+## Training datasets
+HiFi reads and subreads for true negative and true positive CpG methylation sites are available at https://downloads.pacbcloud.com/public/Sequel-II-CpG-training/.  
 
-### Metrics per HiFi read (1x)
- * **Precision**: 86%
- * **Recall**: 85%
- * **Accuracy**: 85%
+The true negatives are from HG002 Whole Genome Amplification (WGA).  The true positives are from HG002 WGA + CpG Methyltransferase (M.Sssl).
+
 
 ## Changelog
 
